@@ -1,12 +1,13 @@
 app-id: io.github.nuttyartist.notes
 runtime: org.kde.Platform
-runtime-version: '6.4'
+runtime-version: "6.4"
 sdk: org.kde.Sdk
 command: notes
 
 finish-args:
   - --share=ipc
   - --socket=x11
+  - --device=dri
   - --talk-name=org.kde.StatusNotifierWatcher
 
 modules:
@@ -15,11 +16,15 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DUPDATE_CHECKER=OFF
+      - -DPRO_VERSION=OFF
     sources:
       - type: git
         url: https://github.com/nuttyartist/notes.git
-        tag: v2.1.0
-        commit: 1ca5ea77bd8e1044b4fa8fd71166cf69904e09f5
+        tag: v2.2.0
+        commit: 8f20a2b404bc1ff7f5f9128f0fd7cb568df8806a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      # TODO: Remove this for the next release
+      - type: patch
+        path: patches/update-appdata-for-2.2.0.diff
