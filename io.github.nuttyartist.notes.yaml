@@ -15,6 +15,7 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DUPDATE_CHECKER=OFF
+      - -DPRO_VERSION=OFF
     sources:
       - type: git
         url: https://github.com/nuttyartist/notes.git
