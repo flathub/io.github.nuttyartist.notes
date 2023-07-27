@@ -25,3 +25,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      # TODO: Remove this for the next release
+      - type: patch
+        path: patches/update-appdata-for-2.2.0.diff
