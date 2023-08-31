@@ -1,6 +1,6 @@
 app-id: io.github.nuttyartist.notes
 runtime: org.kde.Platform
-runtime-version: "6.4"
+runtime-version: '6.4'
 sdk: org.kde.Sdk
 command: notes
 
@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nuttyartist/notes.git
-        tag: v2.2.0
-        commit: 8f20a2b404bc1ff7f5f9128f0fd7cb568df8806a
+        tag: v2.2.1
+        commit: f847e2a559e881b993d16ae7c9d9c2ef719168e6
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
