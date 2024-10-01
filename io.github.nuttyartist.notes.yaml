@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nuttyartist/notes.git
-        tag: v2.3.0
-        commit: 648e488c4a321fe88df837163a7c5dd08c421f35
+        tag: v2.3.1
+        commit: 0b13300e3b7045ca20dab2173441bee59ed469aa
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
